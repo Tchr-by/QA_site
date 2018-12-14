@@ -1,0 +1,272 @@
+/*   
+Theme Name: QA Forte
+Version: 3.0
+Tags: clean, development, html5, bootstrap
+Description: Testing
+Author: DHL
+*/
+
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1{
+    text-align:center;
+}
+header{
+    max-width:1170px;
+    height:80px;
+    margin:auto;
+}
+.main-logo{
+    max-height:52px;
+}
+.map{
+    cursor:pointer;
+}
+.map.error{
+    width:100%;
+    height:100%;
+    position:fixed;
+}
+.map.error img{
+    width:100%;
+    height:100%;
+    filter:hue-rotate(180deg);
+}
+.adress{
+    margin:20px 0;
+}
+.post-index{
+    margin:0 0 20px 0;
+}
+.order-btn{
+    font-size:18px;
+    color:#fff;
+    line-height:52px;
+    background:#08c;
+    border-radius:4px;
+    margin:20px 0;
+    padding:0 52px;
+    cursor:pointer;
+}
+.order-btn:hover{
+    color:#fff;
+    text-decoration:none;
+}
+
+.menu-bg{
+    background:#333;
+    margin:0 0 20px 0;
+}
+
+.menu li{
+    font-size: 17px;
+    line-height: 42px;
+    padding: 0;
+    margin: 0 30px 0 0;
+    list-style-type:none;
+}
+
+.menu{
+    max-width:1170px;
+    display:flex;
+    flex-direction:row;
+    padding:0;
+    margin:auto;
+}
+
+.menu a{
+    color:#fff;    
+}
+
+.page-bg > .container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.news-page{
+    border-bottom:1px solid #ebebeb;
+    padding:0 0 10px 0;
+    margin:0 0 20px 0;
+}
+
+.literature-item{
+    width:25%;
+}
+
+.search-row{
+    width:100%;
+    margin:0 0 20px 0;
+}
+.search-row form{
+    width:100%;
+    display:flex;
+}
+.search-row input[type=text]{
+    width:calc(100% - 80px);
+    border:1px solid #ccc;
+    border-radius:8px 0 0 8px;
+    padding:0 10px;
+}
+#searchsubmit{
+    width:80px;
+    height:42px;
+    color:#fff;
+    background:#08c;
+    border-left:none;
+    border-radius:0 8px 8px 0;
+    cursor:pointer;
+}
+
+.literature-container{
+    width:25%;
+    margin:0 0 20px 0;
+}
+.literature-dl-tmb{
+    height:320px;
+}
+.literature-dl-tmb img{
+    max-width:100%;
+    max-height:100%;
+}
+.literature-title{
+    margin:10px 0;
+}
+.literature-title a{
+    font-size:18px;
+    color:#333;
+    font-weight:700;
+}
+.literature-content{
+    height: 64px;
+    font-size:14px;
+    color:#707070;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding:0 10% 0 0;
+    margin:10px 0 !important;
+    overflow: hidden;
+}
+.literature-dl-admin-btn a{
+    color:#333;
+    line-height:42px;
+    border:1px solid #333;
+    border-radius:28px;
+    padding:0 32px;
+    display:inline-block;
+}
+
+.literature-title, .news-title{
+    font-size:22px;
+}
+
+.literature-content, .news-content{
+    margin: 0px 0px 10px 0;
+}
+.news-timestomp{
+    margin: 0px 0px 5px 0;
+    text-decoration:underline;    
+}
+.courses-item{
+    width:100%;
+    margin:0 40px 20px 0;
+}
+.courses-item .order-btn{
+    width:220px;
+    text-align:center;
+    padding:0 10px;
+}
+.courses-content{
+    width:50%;
+    position:relative;
+}
+.registration-form{
+    padding:20px;
+    margin:0 0 20px 0;
+    background:#fff;
+    display:none;
+    box-shadow:0 0 10px rgba(0,0,0,0.25);
+    position:absolute;;
+    left:0;
+    z-index:999;
+}
+.registration-form form{
+    margin:auto;
+}
+form label{
+    width:80px;
+}
+form input{
+    padding:0 10px;
+}
+form input[type=radio]{
+    margin:0 10px 0 0;
+}
+form input[type=submit]{
+    color:#333;
+    line-height:42px;
+    background:#e2e2e2;
+    border:none;
+    padding:0 20px;
+    margin:10px 0 0 0;
+}
+form input[type=submit]:disabled{
+    color:#fff;
+    background:#e2e2e2;
+}
+.radio-label{
+    width:auto;
+}
+.register-info{
+    width:50%;
+    height:50vh;
+    font-size:18px;
+    color:#155724;
+    text-align:center;
+    background:#d4edda;
+    border:1px solid #c3e6cb;
+    border-radius:8px;
+    padding:20px;
+    display:none;
+    box-shadow:0 0 100px rgba(0,0,0,0.15);
+    position:fixed;
+    top:20vh;
+    left:25%;
+}
+
+.alert-success{
+    width:50%;
+    line-height:42px;
+    text-align:center;
+    position:fixed;
+    display:none;
+}
+.alert-btn{
+    width: 52px;
+    line-height:42px;
+    text-align:center;
+    background: #fff;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.alert-btn:hover{
+    color:#fff;
+    background: rgb(125,185,232); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,185,232,1) 0%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,185,232,1) 0%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,185,232,1) 0%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+.alert-btn:active{
+    color:#fff;
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+
